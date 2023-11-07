@@ -1,0 +1,44 @@
+.flashes .alert.alert-info {
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.container .photo {
+    order: 1;
+    max-width: 400px;
+    margin-left: 6%;
+    border-radius: 10px;
+}
+
+.container .form {
+    order: 2;
+    margin-left: 10%;
+    max-width: 100%;
+}
+
+/* Mobile size */
+@media (max-width: 1050px) {
+    .container .photo {
+        display: none;
+    }
+
+    .container .form {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 300px;
+    }
+
+    .flashes .alert.alert-info {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+}

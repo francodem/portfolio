@@ -1,0 +1,557 @@
+.stack.blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Row a */
+.stack.blocks .row.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stack.blocks .row.a .title {
+    order: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+}
+
+.stack.blocks .row.a .blocks {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+/* Row a end */
+
+
+/* Block a */
+.stack.blocks .row.a .blocks .block.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.stack.blocks .row.a .blocks .block.a .icon {
+    order: 1;
+}
+
+.stack.blocks .row.a .blocks .block.a .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.a .blocks .block.a .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block a end */
+
+/* Block b */
+.stack.blocks .row.a .block.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.a .block.b .icon {
+    order: 1;
+}
+
+.stack.blocks .row.a .block.b .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.a .block.b .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block b end */
+
+
+
+
+/* Row b */
+.stack.blocks .row.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.stack.blocks .row.b .title {
+    order: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.b .blocks {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+/* Row b end */
+
+
+/* Block b */
+.stack.blocks .row.b .blocks .block.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+
+}
+
+.stack.blocks .row.b .blocks .block.a .icon {
+    order: 1;
+}
+
+.stack.blocks .row.b .blocks .block.a .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.b .blocks .block.a .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block a end */
+
+/* Block b */
+.stack.blocks .row.b .block.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.b .block.b .icon {
+    order: 1;
+}
+
+.stack.blocks .row.b .block.b .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.b .block.b .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block b end */
+
+
+
+
+
+/* Row c */
+.stack.blocks .row.c {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.stack.blocks .row.c .title {
+    order: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.c .blocks {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+/* Row c end */
+
+/* Block c */
+.stack.blocks .row.c .blocks .block.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+
+}
+
+.stack.blocks .row.c .blocks .block.a .icon {
+    order: 1;
+}
+
+.stack.blocks .row.c .blocks .block.a .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.c .blocks .block.a .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block c end */
+
+/* Block c */
+.stack.blocks .row.c .block.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.c .block.b .icon {
+    order: 1;
+}
+
+.stack.blocks .row.c .block.b .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.c .block.b .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block c end */
+
+
+
+
+
+
+/* Row d */
+.stack.blocks .row.d {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.stack.blocks .row.d .title {
+    order: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.d .blocks {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+/* Row c end */
+
+/* Block c */
+.stack.blocks .row.d .blocks .block.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+
+}
+
+.stack.blocks .row.d .blocks .block.a .icon {
+    order: 1;
+}
+
+.stack.blocks .row.d .blocks .block.a .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.d .blocks .block.a .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block c end */
+
+/* Block c */
+.stack.blocks .row.d .block.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.d .block.b .icon {
+    order: 1;
+}
+
+.stack.blocks .row.d .block.b .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.d .block.b .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.d .block.c {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.d .block.c .icon {
+    order: 1;
+}
+
+.stack.blocks .row.d .block.c .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.d .block.c .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block c end */
+
+
+
+
+
+/* Row e */
+.stack.blocks .row.e {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.stack.blocks .row.e .title {
+    order: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.e .blocks {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+/* Row c end */
+
+/* Block c */
+.stack.blocks .row.e .blocks .block.a {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+
+}
+
+.stack.blocks .row.e .blocks .block.a .icon {
+    order: 1;
+}
+
+.stack.blocks .row.e .blocks .block.a .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.e .blocks .block.a .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block c end */
+
+/* Block c */
+.stack.blocks .row.e .block.b {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.e .block.b .icon {
+    order: 1;
+}
+
+.stack.blocks .row.e .block.b .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.e .block.b .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.stack.blocks .row.e .block.c {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    margin-left: 2%;
+}
+
+.stack.blocks .row.e .block.c .icon {
+    order: 1;
+}
+
+.stack.blocks .row.e .block.c .label {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stack.blocks .row.e .block.c .label .text {
+    order: 1;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+/* Block e end */
+
+
+/* Desktop  */
+@media (min-width: 768px) {
+    .stack.blocks .row.a .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.a .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.b .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.b .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.c .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.c .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+
+    .stack.blocks .row.d .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.d .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.d .blocks .block.c .icon .svg {
+        font-size: 70px;
+    }
+
+    .stack.blocks .row.e .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.e .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.e .blocks .block.c .icon .svg {
+        font-size: 70px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .stack.blocks .row.a .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.a .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.b .blocks .block.a .icon .svg {
+        font-size: 70px;
+    } 
+    .stack.blocks .row.b .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.c .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.c .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+
+    .stack.blocks .row.d .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.d .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.d .blocks .block.c .icon .svg {
+        font-size: 70px;
+    }
+
+    .stack.blocks .row.e .blocks .block.a .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.e .blocks .block.b .icon .svg {
+        font-size: 70px;
+    }
+    .stack.blocks .row.e .blocks .block.c .icon .svg {
+        font-size: 70px;
+    }
+
+}

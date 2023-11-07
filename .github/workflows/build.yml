@@ -1,0 +1,80 @@
+name: Portfolio CI/CD pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    
+jobs:
+  job_1:
+    name: Run linter over the app
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Setup Flake8
+        run: pip install flake8
+      
+      - name: Run linter over the entire app
+        run: python -m flake8
+  
+  job_2:
+    needs: job_1
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR Public
+        id: login-ecr-public
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          registry-type: public
+
+      - name: Build, tag, and push docker image to Amazon ECR Public
+        env:
+          REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
+          REGISTRY_ALIAS: ${{ secrets.AWS_ECR_REGISTRY_ALIAS }}
+          REPOSITORY: ${{ vars.ECR_REPO }}
+          IMAGE_TAG: ${{ vars.APP_VERSION }}
+        run: |
+          echo $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG
+          docker build -t $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG
+
+      - name: Setup Ansible
+        run: |
+          sudo apt update
+          sudo apt install software-properties-common
+          sudo add-apt-repository --yes --update ppa:ansible/ansible
+          sudo apt install ansible
+
+      - name: Setup SSH key for the EC2 instance
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PERSONAL_PEM }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Deploying the app over the CI environment
+        run: |
+          ansible-playbook -i ${{ secrets.EC2_INSTANCE_DNS }}, -u ubuntu ./ansible/01_deploy.yml --private-key=~/.ssh/id_rsa --extra-vars "container_name=${{ vars.CONTAINER_NAME }} component=${{ vars.ECR_PUBLIC_IMAGE_URI }} version=${{ vars.APP_VERSION }} AWS_KEY=${{ secrets.AWS_ACCESS_KEY }} AWS_SECRET_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} APP_SECRET_KEY=${{ secrets.APP_SECRET_KEY }} SITE_KEY=${{ secrets.G_CAPTCHA_SITE_KEY }} SERVER_KEY=${{ secrets.G_CAPTCHA_SERVER_KEY }}"

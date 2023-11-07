@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class='grid1'>
+        <div class="square-gradient1">
+            <p class="text-title">Backend for Web Apps and APIs</p>
+            <p class="text-subtitle">Applying Flask and FastAPI</p>
+        </div>
+    </div> 
+
+
+
+    <style>
+        .grid1 {
+            display: grid;
+            grid-template-columns: repeat(3, 300px 200px);
+            grid-column-gap: 10%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            /* grid-auto-flow: row; */
+        }
+
+        .grid1 .square-gradient1 {
+            grid-column: 1;
+            margin-left: 48%;
+        }
+        .square-gradient1 {
+        width: 1150px;
+        height: 200px;
+        background: linear-gradient(10deg, #60d4f1, #69f899, #dcdf31);
+        border-radius: 8px;
+        opacity: 1;
+        transition: 0.5s;
+        border: none;
+        }
+
+        .square-gradient1 .text-title {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            top: 70%;
+            left: 5%;
+            border: none;
+        }
+
+        .square-gradient1 .text-subtitle {
+            color: #FFFFFF;
+            font-size: 16px;
+            position: relative;
+            top: 60%;
+            left: 5%;
+            border: none;
+        }
+    </style>
+{% endblock %}

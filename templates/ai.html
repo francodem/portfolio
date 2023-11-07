@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="body">
+
+
+        <div class="portrait landscape">
+            <p class="title">Welcome to AI</p>
+            <p class="subtitle">Next software generation.</p>
+            <img class="file" src="{{ url_for('static', filename = '/images/MIT-Neural-Networks-01_0.gif') }}">
+            <p class="file caption">Source: MIT - GIF Brain Illustration.</p>
+        </div>
+
+        <div class="tiles">
+            <div class="tile a">
+                <p class="title">¿Why AI?</p>
+                <p class="subtitle">A new coding paradigm.</p>
+            </div>
+
+            <div class="tile b">
+                <p class="title">Use cases</p>
+                <p class="subtitle">Efficient. Performance.</p>
+            </div>
+
+            <div class="tile c">
+                <p class="title">AI Notes</p>
+                <p class="subtitle">See my AI notes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        .body {
+  
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .body .portrait.landscape {
+            order: 1;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+       
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .body .tiles {
+            order: 2;
+
+            width: 77%;
+            margin-top: 5%;
+            margin-left: 13%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 10%;
+        }
+
+        .body .portrait.landscape .title {
+            order: 1;
+            margin: auto;
+            margin-top: 3%;
+
+            color: white;
+            font-size: 100px;
+            font-family: "Mona Sans Bold", sans-serif;
+            font-weight: 900;
+        }
+
+        .body .portrait.landscape .subtitle {
+            order: 2;
+            margin: auto;
+            margin-top: -2%;
+            margin-bottom: 0%;
+            color: white;
+            font-size: 25px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .body .portrait.landscape .file {
+            order: 3;
+            width: 100%;
+            margin: 0%;
+        }
+
+        .body .portrait.landscape .file.caption {
+            order: 4;
+            margin: auto;
+            color: rgb(123, 123, 123);
+            font-size: 10px;
+            margin-bottom: 5%;
+            margin-left: 10%;
+            width: 50%;
+        }
+
+
+
+        .body .tiles .tile.a {
+            order: 1;
+            background: linear-gradient(100deg, rgb(0, 154, 107) 30%, rgb(0, 0, 0) 30%);
+            height: 120px;
+            width: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin-left: 10%;
+        }
+
+        .body .tiles .tile.a .title{
+            order: 1;
+            color: white;
+            font-size: 18px;
+            font-family: "mona sans", sans-serif;
+            font-weight: 700;
+
+            margin-left: 5%;
+            margin-top: 30%;
+        }
+
+        .body .tiles .tile.a .subtitle{
+            order: 2;
+            color: white;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+
+            margin-left: 5%;
+            margin-top: -8%;
+        }
+
+
+
+
+        .body .tiles .tile.b {
+            order: 2;
+            background: linear-gradient(100deg, rgb(183, 211, 0) 30%, rgb(0, 0, 0) 30%);
+            height: 120px;
+            width: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 10%;
+        }
+
+        .body .tiles .tile.b .title{
+            order: 1;
+            color: white;
+            font-size: 18px;
+            font-family: "mona sans", sans-serif;
+            font-weight: 700;
+
+            margin-left: 5%;
+            margin-top: 30%;
+        }
+
+        .body .tiles .tile.b .subtitle{
+            order: 2;
+            color: white;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+
+            margin-left: 5%;
+            margin-top: -8%;
+        }
+
+
+
+
+
+        .body .tiles .tile.c {
+            order: 3;
+            background: linear-gradient(100deg, rgb(159, 0, 114) 30%, rgb(0, 0, 0) 30%);
+            height: 120px;
+            width: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 10%;
+        }
+
+        .body .tiles .tile.c .title{
+            order: 1;
+            color: white;
+            font-size: 18px;
+            font-family: "mona sans", sans-serif;
+            font-weight: 700;
+
+            margin-left: 5%;
+            margin-top: 30%;
+        }
+
+        .body .tiles .tile.c .subtitle{
+            order: 2;
+            color: white;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+
+            margin-left: -37%;
+            margin-top: 42%;
+        }
+
+
+    /* Estilo para pantallas de escritorio */
+    @media (min-width: 768px) {
+        .body .tiles .tile.a {
+            margin-top: 0%;
+        }
+
+        .body .tiles .tile.b {
+            margin-top: 0%;
+        }
+
+        .body .tiles .tile.c {
+            margin-top: 0%;
+        }
+    }
+
+    /* Estilo para dispositivos móviles */
+    @media (max-width: 767px) {
+        .body .portrait.landscape {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .body .portrait.landscape .file {
+            width: 100%;
+        }
+
+        .body .portrait.landscape .title {
+            font-size: 50px;
+        }
+
+        .body .tiles {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .body .tiles .tile.a {
+            margin-top: 0%;
+        }
+
+        .body .tiles .tile.b {
+            margin-top: 3%;
+        }
+
+        .body .tiles .tile.c {
+            margin-top: 3%;
+        }
+    }
+    </style>
+{% endblock %}

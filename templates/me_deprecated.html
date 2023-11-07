@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/me_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <div class='top-home'>
+        <div class='title'>
+            <p>Me&ensp;🧑🏻‍💻</p>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <div class="body">
+
+        <div class="photo container">
+            {% if img_url %}
+                <img class="file" src="{{ img_url }}">
+            {% endif %}
+        </div>
+        
+
+        <div class="content container">
+            <!-- <p>Content container</p> -->
+
+            <div class="row T">
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">Francisco Moreno</p>
+                    </div>
+                    <div class="description">
+                        <p class="text">
+                            Baja California, México
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row A">
+
+                <div class="icon block">
+                    <div class="base">
+                        <span class="material-symbols-outlined">
+                            work
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">Software Development Engineer II</p>
+                    </div>
+                    <div class="description">
+                        <p class="text">Currently working as a Software Development Engineer II in an IoT 
+                            and cloud project oriented to a smart kitchen project to be builded in USA by Deloitte.
+                            I priorize the efficiency, quality and experience on my work. Always learning best practicies
+                            in this professional field.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row B">
+
+                <div class="icon block">
+                    <div class="base">
+                        <span class="material-symbols-outlined">
+                            contact_page
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">About</p>
+                    </div>
+                    <div class="description">
+                        <p class="text">In 2017 I take the desition of make the Electronics Engineering
+                            career on the best university of my town, the Universidad Autonoma de Baja California
+                            where I was learn to much of physics and math, and also programming with C/C++.<br>
+
+                            In 2020 the pandemic starts and I get a job on Allegion, PLC, a manufacturing plant
+                            in Ensenada, Baja California. This plant is on the field of electronic deadbolts in 
+                            USA. Here I get my first engineering job such as Software Engineer for the manufacturing
+                            department with the mission to create a new Industry 4.0 environment in the plant.<br>
+
+                            In the middle of that, I get a invitation to be part of a scientific project in the
+                            UNAM at the Nanotechnology and Nanoscience Center to make a great IoT project automating
+                            a reactor to make semi-conductors materials.<br>
+
+                            In 2022 I get a job offer of Deloitte USA at Monterrey, N.L. to be part as SDE in a 
+                            team to make IoT and cloud projects to develop the new digitalization era in a different field
+                            types.<br>
+
+                            Now I'm here working with a team of 5 members doing the best to perform great delivery products
+                            and making dreams possible every days.<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row C">
+
+                <div class="icon block">
+                    <div class="base">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">¿Where I've made an impact?</p>
+                    </div>
+                    <div class="description">
+                        <p class="text"> ‧ Software Development Engineer II. Deloitte. 2022 - currently.<br>
+                            ‧ Software Engineer (Lead volunteer). CNyN UNAM. 2021.<br>
+                            ‧ Software Engineer C. Allegion, PLC. 2020 - 2022.<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row D">
+
+                <div class="icon block">
+                    <div class="base">
+                        <span class="material-symbols-outlined">
+                            handyman
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">Stack</p>
+                    </div>
+
+                    <div class="description">
+
+                        {% include "stack_list.html" %}
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row E">
+
+                <div class="icon block">
+                    <div class="base">
+                        <span class="material-symbols-outlined">
+                            grade
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text block">
+                    <div class="title">
+                        <p class="text">Education</p>
+                    </div>
+                    <div class="description">
+                        <p class="text">★&nbsp;&nbsp;M. Artificial Intelligence&nbsp;&nbsp;⎯&nbsp;&nbsp;Universidad Internacional de la Rioja (UNIR) <br>NOV/2023 - 2025<br>
+                            ⁃&nbsp;&nbsp;B. Sc. Electronic Engineering&nbsp;&nbsp;⎯&nbsp;&nbsp;Universidad Autonoma de Baja California (UABC) <br>2017 - 2022<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+
+

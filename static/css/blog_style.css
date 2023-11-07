@@ -1,0 +1,442 @@
+.body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body .tiles {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+.body .details {
+    order: 2;
+
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.body .tiles .link.a {
+    order: 1;
+    background: linear-gradient(10deg, #f0425f 30%, #e007aa 30%, #e2b45f 30%);
+    height: 200px;
+    width: 300px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    text-decoration: none;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.body .tiles .link.a:hover {
+    opacity: 0.85;
+}
+
+
+.body .tiles .link.b {
+    order: 2;
+    border-radius: 8px;
+    background: linear-gradient(10deg, #3cc2b0 30%, #3b58ff 30%, #a368f0 30%);
+    height: 200px;
+    width: 300px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.body .tiles .link.b:hover {
+    opacity: 0.85;
+}
+
+.body .tiles .link.c {
+    order: 3;
+    background: linear-gradient(10deg, #9c6aff 30%, #e007aa 30%, #b4f978 30%);
+    height: 200px;
+    width: 300px;
+    margin-left: 2.5%;
+    margin-top: 10%;
+    text-decoration: none;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.body .tiles .link.c:hover {
+    opacity: 0.85;
+}
+
+/* Estilo para pantallas de escritorio */
+@media (min-width: 768px) {
+    .body .tiles .link.a {
+        margin-top: 3%;
+    }
+    .body .tiles .link.b {
+        margin-top: 3%;
+    }
+    .body .tiles .link.c {
+        margin-top: 3%;
+    }
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 767px) {
+    .body .tiles .link.a {
+        margin-top: 7%;
+    }
+    .body .tiles .link.b {
+        margin-top: 7%;
+    }
+    .body .tiles .link.c {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+}
+
+.body .tiles .tile.a .content {
+    order: 1;
+    /* background-color: rgb(255, 255, 255); */
+
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .tiles .tile.a .content .title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.body .tiles .tile.a .content .sub-title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+.body .tiles .tile.b .content {
+    order: 1;
+
+
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .tiles .tile.b .content .title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.body .tiles .tile.b .content .sub-title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+.body .tiles .tile.c .content {
+    order: 1;
+
+
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .tiles .tile.c .content .title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.body .tiles .tile.c .content .sub-title {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+
+/* Row a row in details */
+.body .details .row.a {
+    order: 1;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.body .details .row.a .icon.area {
+    order: 1;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .details .row.a .icon.area .icon.base .material-symbols-outlined {
+    color: rgb(198, 185, 92);
+    margin: auto;
+    font-size: 40px;
+}
+
+.body .details .row.a .icon.area .icon.base {
+    order: 1;
+
+    background-color: rgb(255, 252, 168);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    margin: auto;
+    display: flex;
+}
+
+.body .details .row.a .icon.area .icon.base .python.icon{
+    order: 1;
+    margin: auto;
+    height: 45px;
+    width: 45px;
+}
+
+.body .details .row.a .text.block {
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.body .details .row.a .text.block .title {
+    order: 1;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.a .text.block .sub-title {
+    order: 2;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.a .text.block .title .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 900;
+}
+
+.body .details .row.a .text.block .sub-title .text {
+    font-family: "Roboto", sans-serif;
+}
+/* Row a row end */
+
+
+
+
+
+/* Row b  */
+.body .details .row.b {
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.body .details .row.b .icon.area {
+    order: 1;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .details .row.b .icon.area .icon.base {
+    order: 1;
+
+    background-color: #005eff;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    margin: auto;
+    display: flex;
+}
+
+.body .details .row.b .icon.area .icon.base .text {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.body .details .row.b .icon.area .icon.base .material-symbols-outlined {
+    color: white;
+    font-size: 40px;
+    margin: auto;
+}
+
+.body .details .row.b .text.block {
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.body .details .row.b .text.block .title {
+    order: 1;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.b .text.block .sub-title {
+    order: 2;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.b .text.block .title .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 900;
+}
+
+.body .details .row.b .text.block .sub-title .text {
+    font-family: "Roboto", sans-serif;
+}
+/* Row b end */
+
+
+/* Row c  */
+.body .details .row.c {
+    order: 3;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.body .details .row.c .icon.area {
+    order: 1;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .details .row.c .icon.area .icon.base {
+    order: 1;
+
+    background-color: rgb(0, 164, 87);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    margin: auto;
+    display: flex;
+}
+
+.body .details .row.c .icon.area .icon.base .material-symbols-outlined {
+    color: white;
+    font-size: 40px;
+    margin: auto;
+}
+
+.body .details .row.c .icon.area .icon.base .fa-brands.fa-aws {
+    margin: auto;
+    color: white;
+}
+
+.body .details .row.c .icon.area .icon.base .python.icon{
+    order: 1;
+    margin: auto;
+    height: 45px;
+    width: 45px;
+}
+
+.body .details .row.c .text.block {
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.body .details .row.c .text.block .title {
+    order: 1;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.c .text.block .sub-title {
+    order: 2;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.body .details .row.c .text.block .title .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 900;
+}
+
+.body .details .row.c .text.block .sub-title .text {
+    font-family: "Roboto", sans-serif;
+}
+/* Row c end */

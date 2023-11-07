@@ -1,0 +1,557 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Photo container  */
+.body .photo.container {
+    flex: 1;
+    order: 1;
+    background-color: rgb(232, 255, 244);
+
+    max-width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.body .photo.container .file {
+    order: 1;
+    margin: auto;
+    height: auto;
+    /* filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 120px #00ff00) drop-shadow(0 0 150px #aa00ff); */
+}
+
+.body .content.container {
+    order: 2;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #FFF0E5;
+    box-shadow: 2px 2px 10px 2px #eeeeee;
+
+    border-radius: 20px;
+}
+
+/* Estilo para pantallas de escritorio */
+@media (min-width: 768px) {
+    .body .photo.container {
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .body .photo.container .file {
+        width: 45%;
+    }
+
+    .body .content.container{
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .body .content.container .row.T {
+        margin-top: 5%;
+    }
+
+    .body .content.container .row.A {
+        margin-top: 5%;
+    }
+
+    .body .content.container .row.B {
+        margin-top: 5%;
+    }
+
+    .body .content.container .row.C {
+        margin-top: 5%;
+    }
+
+    .body .content.container .row.D {
+        margin-top: 0%;
+    }
+
+    .body .content.container .row.E {
+        margin-top: 5%;
+    }
+
+    .body .content.container .row.E {
+        margin-bottom: 0%;
+    }
+
+    .body .content.container .row.T .text.block .title .text {
+        font-family: 'Roboto Bold', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        margin: auto;
+        color: #000000;
+    }
+
+    .body .content.container .row.T .text.block .description .text{
+        font-family: 'Roboto', sans-serif;
+        color: #cb9e83;
+        font-size: 15px;
+    }
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 767px) {
+    .body .photo.container {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .body .photo.container .file {
+        width: 90%;
+    }
+    .body .content.container{
+        margin-bottom: 10%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .body .content.container .row.T {
+        margin-top: 10%;
+    }
+
+    .body .content.container .row.A {
+        margin-top: 10%;
+    }
+
+    .body .content.container .row.E {
+        margin-bottom: 20%;
+    }
+
+    .body .content.container .row.T .text.block .title .text {
+        font-family: 'Roboto Bold', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        margin: auto;
+        color: #000000;
+        
+    }
+
+    .body .content.container .row.T .text.block .description .text{
+        font-family: 'Roboto', sans-serif;
+        color: #cb9e83;
+        font-size: 15px;
+    }
+}
+
+/* content container rows */
+.body .content.container .row.T {
+    order: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.A {
+    order: 2;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.B {
+    order: 3;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.C {
+    order: 4;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.D {
+    order: 5;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 60%;
+}
+
+.body .content.container .row.E {
+    order: 6;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* end of rows */
+
+
+
+/* row T content */
+.body .content.container .row.T .text.block {
+    order: 1;
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0%;
+}
+
+.body .content.container .row.T .text.block .title {
+    order: 1;
+    
+    margin: auto;
+}
+
+.body .content.container .row.T .text.block .description {
+    order: 2;
+    margin: auto;
+}
+
+/* row T end */
+
+
+
+
+/* row A content */
+.body .content.container .row.A .icon.block {
+    order: 1;
+    
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.A .icon.block .base {
+    order: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+
+    background-color: rgb(255, 132, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.A .icon.block .base .material-symbols-outlined {
+    order: 1;
+    margin: auto;
+    color: white;
+
+    size: 80%;
+}
+
+.body .content.container .row.A .text.block {
+    order: 2;
+    
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.body .content.container .row.A .text.block .title {
+    order: 1;
+    
+}
+
+.body .content.container .row.A .text.block .title .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.body .content.container .row.A .text.block .description {
+    order: 2;
+    
+}
+
+.body .content.container .row.A .text.block .description .text{
+    font-family: 'Roboto', sans-serif;
+}
+/* row A end */
+
+
+/* row B content */
+.body .content.container .row.B .icon.block {
+    order: 1;
+    
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.B .icon.block .base {
+    order: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+
+    background-color: rgb(0, 255, 81);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.B .icon.block .base .material-symbols-outlined {
+    order: 1;
+    margin: auto;
+    color: white;
+
+    size: 80%;
+}
+
+.body .content.container .row.B .text.block {
+    order: 2;
+    
+    width: 60%;
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.B .text.block .title {
+    order: 1;
+    
+}
+
+.body .content.container .row.B .text.block .title .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.body .content.container .row.B .text.block .description {
+    order: 2;
+    
+}
+
+.body .content.container .row.B .text.block .description .text {
+    font-family: 'Roboto', sans-serif;
+}
+/* row B end */
+
+
+/* row C content */
+.body .content.container .row.C .icon.block {
+    order: 1;
+    
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.C .icon.block .base {
+    order: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+
+    background-color: rgb(255, 101, 83);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.C .icon.block .base .material-symbols-outlined {
+    order: 1;
+    margin: auto;
+    color: white;
+
+    size: 80%;
+}
+
+.body .content.container .row.C .text.block {
+    order: 2;
+    
+    width: 60%;
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.C .text.block .title {
+    order: 1;
+    
+}
+
+.body .content.container .row.C .text.block .title .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.body .content.container .row.C .text.block .description {
+    order: 2;
+    
+}
+
+.body .content.container .row.C .text.block .description .text {
+    font-family: 'Roboto', sans-serif;
+}
+/* row C end */
+
+
+/* row D content */
+.body .content.container .row.D {
+    margin-bottom: 5%;
+}
+
+.body .content.container .row.D .icon.block {
+    order: 1;
+    
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.D .icon.block .base {
+    order: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+
+    background-color: rgb(62, 156, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.D .icon.block .base .material-symbols-outlined {
+    order: 1;
+    margin: auto;
+    color: white;
+
+    size: 80%;
+}
+
+.body .content.container .row.D .text.block {
+    order: 2;
+    
+    
+    width: 60%;
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.D .text.block .title {
+    order: 1;
+    
+    
+}
+
+.body .content.container .row.D .text.block .title .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.body .content.container .row.D .text.block .description {
+    order: 2;
+}
+
+/* row D end */
+
+
+/* row E content */
+.body .content.container .row.E .icon.block {
+    order: 1;
+
+    max-width: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.E .icon.block .base {
+    order: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+
+    background-color: rgb(0, 109, 4);
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body .content.container .row.E .icon.block .base .material-symbols-outlined {
+    order: 1;
+    margin: auto;
+    color: white;
+
+    size: 80%;
+}
+
+.body .content.container .row.E .text.block {
+    order: 2;
+
+    width: 60%;
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.body .content.container .row.E .text.block .title {
+    order: 1;
+    
+}
+
+.body .content.container .row.E .text.block .title .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.body .content.container .row.E .text.block .description {
+    order: 2;
+    
+}
+
+.body .content.container .row.E .text.block .description .text {
+    font-family: 'Roboto', sans-serif;
+}
+/* row E end */
+
+

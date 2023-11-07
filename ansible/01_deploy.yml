@@ -1,0 +1,26 @@
+- name: Execute Bash script on EC2 instance
+  hosts: all
+  become: true
+  gather_facts: false
+  vars:
+    component: "public.ecr.aws/e0o6s9e5/frmo_portfolio"
+    version: "1.0.0"
+    container_name: "frmo"
+    AWS_KEY: "none"
+    AWS_SECRET_KEY: "none"
+    APP_SECRET_KEY: "none"
+    SITE_KEY: "none"
+    SERVER_KEY: "none"
+
+  tasks:
+    - name: Pull image from repository
+      become: true
+      shell: sudo docker pull {{ component }}:{{ version }}
+
+    - name: Removing current container
+      become: true
+      shell: sudo docker rm -f {{ container_name }}
+
+    - name: Run container with previous image pulled
+      become: true
+      shell: sudo docker run -e AWS_KEY={{ AWS_KEY }} -e AWS_SECRET_KEY={{ AWS_SECRET_KEY }} -e APP_SECRET_KEY={{ APP_SECRET_KEY }} -e SITE_KEY={{ SITE_KEY }} -e SERVER_KEY={{ SERVER_KEY }} -d -p 80:8080 --name {{ container_name }} {{ component }}:{{ version }}

@@ -1,0 +1,61 @@
+<div class='navbar-space'>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('me')}}" style='margin: 0px 25px 0 0px;'>Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio" style='margin: 0px 25px 0 0px;'>Portfolio</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="/ai" style='margin: 0px 25px 0 0px;'>AI Journey</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="/writing" style='margin: 0px 25px 0 0px;'>Writing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact" style='margin: 0px 25px 0 0px;'>Say Hello</a>
+              </li>
+              
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+</div>
+
+<style>
+  
+
+  /* Mobile */
+  @media (max-width: 767px) {
+  }
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    .navbar-space .navbar.navbar-expand-lg.navbar-light .container-fluid .collapse.navbar-collapse .navbar-nav.me-auto.mb-2.mb-lg-0 {
+      margin-left: -35px;
+    }
+  }
+
+</style>

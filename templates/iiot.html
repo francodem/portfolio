@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class='iot-container'>
+
+        <div class="square-gradient1">
+            <p class="text-title">IIoT on Industrial Digitalization</p>
+            <p class="text-subtitle">Multiple devices connected by I4.0</p>
+        </div>
+
+        <div class='project-text1'>
+            <p>This project was released on 2021 with Allegion, PLC company in the Ensenada plant where...</p>
+        </div>
+        
+    </div> 
+
+
+
+    <style>
+        .iot-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* background-color: cyan; */
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 1000px;
+            /* grid-auto-flow: row; */
+        }
+
+        .iot-container .square-gradient1 {
+            order: 1;
+            height: 20%;
+            background: linear-gradient(75deg, #f0425f, #e007aa, #e2b45f);
+            border-radius: 8px;
+            opacity: 1;
+            transition: 0.5s;
+            border: none;
+        }
+
+        .iot-container .square-gradient1 .text-title {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            top: 70%;
+            left: 5%;
+            border: none;
+        }
+
+        .iot-container .square-gradient1 .text-subtitle {
+            color: #FFFFFF;
+            font-size: 16px;
+            position: relative;
+            top: 60%;
+            left: 5%;
+            border: none;
+        }
+
+        .iot-container .project-text1 {
+            order: 2;
+            margin-top: 5%;
+        }
+    </style>
+{% endblock %}

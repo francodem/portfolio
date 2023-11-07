@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/contact_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <div class="alert alert-info" role="alert">
+                        <li>{{ message }}</li>
+                    </div>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <div class='top-home'>
+        <div class='title'>
+            <p>Hello&ensp;👋</p>
+        </div>    
+    </div>
+
+
+    <div class="container">
+
+        <img class="photo" src="{{ url_for('static', filename = '/images/space.jpeg') }}">
+
+        <div class="form">
+            {% include 'contactForm.html' %}
+        </div>
+    
+    </div>
+
+{% endblock %}

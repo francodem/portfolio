@@ -1,0 +1,102 @@
+.contact-container .title {
+    font-size: 35px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 5% 0 0 10%;
+    color: rgb(65, 69, 74);
+}
+
+.top-title {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.top-title .top.flex {
+    margin-left: 10%;
+    order: 1;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-title .top.flex .logo {
+    order:1;
+
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+}
+
+.top-title .top.flex .ads {
+    order: 2;
+    margin-top: 55%;
+    margin-left: 25%;
+    width: 40px;
+    height: 25px;
+    background-color: rgb(176, 255, 169);
+    border-radius: 9px;
+
+    display: flex;
+}
+
+.top-title .top.flex .ads .text {
+    order: 1;
+    margin: auto;
+    color: rgb(112, 130, 0);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.top-home .title {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.top-home .about {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-space {
+    margin: 1% 10% 0% 10%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(65, 69, 74);
+}
+
+.top-title .logo-up-part {
+    order: 1;
+    margin-top: 20px;
+    margin-left: -1.5px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #080357;
+    font-size: 30px;
+}
+
+.top-title .logo-down-part {
+    order: 2;
+    margin-top: -35px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #080357;
+    /* background:  linear-gradient( #a175e7, #b45078); */
+    /* -webkit-background-clip: text;
+    color: transparent;   */
+    font-size: 30px;
+}
+
+.bg-light.text-center.text-white {
+    margin-top: 0%;
+}
+
+/* Footer properties ------------------------------------------------ */ 
+
+/* End of Footer properties ------------------------------------------------ */ 

@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/blog_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<div class="top-home">
+    <div class='title'>
+        <p>Writing&ensp;📝</p>
+    </div>
+</div>
+
+<div class="body">
+    
+    <div class="tiles">
+        <a href="{{ url_for('iiot')}}" class="link a">
+            <div class="tile a">
+                
+                <div class="content">
+
+                    <p class="title">Medium</p>
+                    <p class="sub-title">Tech articles</p>
+                
+
+                </div>
+
+            </div>
+        </a>
+
+        <a href="{{ url_for('cloud')}}" class="link b">
+            <div class="tile b">
+            
+                <div class="content">
+    
+                    <p class="title">Notion</p>
+                    <p class="sub-title">My study notes</p>
+                
+    
+                </div>
+    
+            </div>
+        </a>
+
+    </div>
+
+    <div class="details">
+
+
+        <div class="row a">
+            <div class="icon area">
+                <div class="icon base">
+                    <span class="material-symbols-outlined">
+                        notes
+                    </span>
+                </div>
+            </div>
+
+            <div class="text block">
+                <div class="title">
+                    <p class="text">Study methodology</p>
+                </div>
+                <div class="sub-title">
+                    <p class="text" align="left">
+                        Taking courses has many benefits. You can learn how
+                        to create a web page with Flask or Django, or how to
+                        build a FastAPI application. However, when it comes
+                        to engineering applications, courses may not provide
+                        all the necessary resources, which is why they may
+                        fall short. That's where books come in! Books are
+                        great resources for these types of situations. For
+                        example, an O'Reilly book can provide a complete guide
+                        to the engineering aspects of a project. Check out my
+                        book recommendations in my Medium profile.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row b">
+            <div class="icon area">
+                <div class="icon base">
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="text block">
+                <div class="title">
+                    <p class="text">Tech Industry</p>
+                </div>
+                <div class="sub-title">
+                    <p class="text" align="left">
+                        I write about the tech industry and its current state. 
+                        I provide interesting insights from experts in Silicon
+                        Valley, the hub of the main tech companies in the US.
+                        What is happening with the industry's current state,
+                        and what can we expect in the future according to
+                        these experts?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row c">
+            <div class="icon area">
+                <div class="icon base">
+                    <span class="material-symbols-outlined">
+                        memory
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="text block">
+                <div class="title">
+                    <p class="text">Hardware</p>
+                </div>
+                <div class="sub-title">
+                    <p class="text" align="left">
+                        Looking for recommendations on the latest hardware releases
+                        for AI and IoT projects? With the pandemic pausing many
+                        developments, could 2023 mark the beginning of a new era in
+                        hardware?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}

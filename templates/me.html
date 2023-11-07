@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+    <div class="background">
+        <div class="my presentation">
+            <p class="name">SOFTWARE</p>
+            <p class="last name">ENGINEER.</p>
+            
+            <div class="small description a">
+                <p class="text">My background experience is oriented with systems development and backend development.</p>
+            </div>
+
+            <div class="small description b">
+                <p class="text">Highly skilled software engineer with >2 years of experience on the field related with AWS cloud (Infrastructure for applications and IoT systems), and backend development with Python.</p>
+            </div>
+
+            <div class="small description c">
+                <p class="text">Development of distributed systems and backend applications applying engineering principles.</p>
+            </div>
+
+        </div>
+        
+        <div class="memoji area">
+            <img class="memoji" src="{{ url_for('static', filename='images/memo.png') }}" alt="Memoji">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="first row">
+            <div class="title">
+                <p class="text">Engineering</p>
+            </div>    
+            <div class="description">
+                <p class="text">I bring to the table extensive engineering experience, with a focus on problem-solving using software and the cloud. It is fundamental to concentrate on the pivotal elements to build scalable, maintainable, and reliable systems.</p>
+            </div>
+        </div>
+
+        <div class="second row">
+            <div class="title">
+                <p class="text">Cloud</p>
+            </div>
+            <div class="description">
+                <p class="text">To enhance efficiency and swiftly respond to market demands, the cloud has become a critical component of my repertoire of industry implementations. It's not only something I'm passionate about, but also something I highly recommend to organizations in order to improve their processes and achieve better short-term results.</p>
+            </div>
+        </div>
+
+        <div class="third row">
+            <div class="title">
+                <p class="text">Project Management</p>
+            </div>
+            <div class="description">
+                <p class="text">Skills alone are not enough in the face of inadequate resource management. Therefore, I apply increasingly improved methodologies and tools for project management and individual task management in each project assigned to me.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <style>
+  
+
+        .content {
+            margin-top: 5%;
+            background-color: rgba(255, 0, 0, 0);
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .content .first.row .title {
+            background-color: rgba(245, 245, 220, 0);
+            width: 100%;
+        }
+
+        .content .first.row .title .text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            color: #080357;
+            font-size: 60px;
+        }
+
+        .content .first.row .description {
+            background-color: rgba(255, 0, 0, 0);
+            width: 100%;
+        }
+
+        .content .first.row .description .text {
+            color: #080357;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+        }
+
+        .content .second.row .title {
+            background-color: rgba(245, 245, 220, 0);
+            width: 100%;
+        }
+
+        .content .second.row .title .text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            color: #080357;
+            font-size: 60px;
+
+        }
+        
+        .content .second.row .description {
+            background-color: rgba(255, 0, 0, 0);
+            width: 100%;
+        }
+
+        .content .second.row .description .text {
+            color: #080357;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+        }
+
+        .content .third.row .title {
+            background-color: rgba(245, 245, 220, 0);
+            width: 100%;
+        }
+
+        .content .third.row .title .text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            color: #080357;
+            font-size: 60px;
+        }
+
+        .content .third.row .description {
+            background-color: rgba(255, 0, 0, 0);
+            width: 100%;
+        }
+
+        .content .third.row .description .text {
+            color: #080357;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+        }
+
+        .background {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #080357;
+            min-height: 600px;
+        }
+
+        .background .my.presentation {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+
+            background-color: rgba(0, 255, 255, 0);
+            width: 50%;
+            margin-left: 10%;
+        }
+
+        .background .my.presentation .name {
+            order: 1;
+            font-size: 60px;
+            margin-top: 15%;
+            font-family: 'Roboto', sans-serif;
+            color: #F5FF90;
+            font-weight: 900;
+        }
+        
+        .background .my.presentation .last.name {
+            order: 2;
+            font-size: 60px;
+            margin-top: -40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+        }
+
+        .background .my.presentation .small.description.a {
+            order: 3;
+            width: 100%;
+            background-color: rgba(255, 196, 1, 0);
+        }
+
+        .background .my.presentation .small.description.b {
+            order: 4;
+            width: 90%;
+            background-color: rgba(0, 255, 170, 0);
+        }
+
+        .background .my.presentation .small.description.c {
+            order: 5;
+            width: 100%;
+            background-color: rgba(64, 255, 0, 0);
+        }
+
+        .background .my.presentation .small.description.a .text {
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            font-size: 17px;
+            color: white;
+        }
+
+        .background .my.presentation .small.description.b .text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            text-align: left;
+            color: white;
+        }
+
+        .background .my.presentation .small.description.c .text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            text-align: left;
+            color: #F5FF90;
+            font-weight: 900;
+        }
+
+        .background .memoji.area {
+            order: 2;
+            /* background-color: rgba(0, 0, 255, 0); */
+            max-width: 30%;
+        }
+
+        .background .memoji {
+            width: 100%;
+            margin: auto;
+        }
+
+        @media (min-width: 800px) and (max-width: 1200px) {
+            .background {
+                flex-direction: column;
+            }
+
+            .background .memoji.area {
+                max-width: 40%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+
+            .background .my.presentation .small.description.a {
+                width: 80%;
+            }
+        }
+
+        /* Estilos para tablets y laptops (pantallas entre 768px y 1199px de ancho) */
+        @media (min-width: 300px) and (max-width: 800px) {
+            .background {
+                flex-direction: column;
+            }
+
+            .background .my.presentation {
+                width: 80%;
+            }
+            
+            .background .my.presentation .name {
+                font-size: 58px;
+            }
+
+            .background .my.presentation .last.name {
+                font-size: 58px;
+            }
+
+            .background .memoji.area {
+                max-width: 80%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+
+            .content .first.row .title .text {
+                font-size: 50px;
+            }
+
+            .content .second.row .title .text {
+                font-size: 50px;
+            }
+
+            .content .third.row .title .text {
+                font-size: 50px;
+            }
+
+
+            /* .background .my.presentation .small.description.a {
+                width: 400px;
+            } */
+        }
+
+    </style>
+
+{% endblock %}
+
